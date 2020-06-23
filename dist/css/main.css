@@ -24,7 +24,7 @@
   background-color: #333; }
 
 a[class^="btn-"]:hover {
-  background-color: red; }
+  background-color: #ff0037; }
 
 .lead {
   font-size: 1.3rem;
@@ -286,6 +286,8 @@ img {
       color: #ff0037; }
 
 @media (max-width: 800px) {
+  a[class^="btn-"]:hover {
+    background-color: #f4f4f4; }
   #header-home {
     position: relative;
     height: 30rem; }
@@ -361,13 +363,31 @@ img {
       border-radius: 50%;
       grid-column: 2 / span 3; }
     #home-s .about #t-con {
-      grid-column: 1 / span 5; }
+      grid-column: 1 / span 5;
+      margin: 0; }
   #home-a .specials {
     font-size: 100%; }
   #home-b .specials {
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr); } }
+    grid-template-rows: repeat(2, 1fr); }
+  #resume #download {
+    padding: 4rem 2rem 6rem 2rem; }
+  #contact-a .text-fields {
+    grid-template-areas: "name" "email" "phone" "subject" "message"; }
+  #contact-a button#submit.btn-dark {
+    margin-top: 1rem; }
+  #contact-b {
+    padding: 0; }
+    #contact-b .contact-info {
+      grid-template-columns: 1fr;
+      font-size: 120%; }
+      #contact-b .contact-info div {
+        padding: 2rem; }
+  #contact-c {
+    padding: 0rem 0 2rem 0; }
+  #main-footer .footer-content {
+    flex-direction: column; } }
 
-@media (max-width: 380px) {
+@media (max-width: 400px) {
   #header-home .header-content h1 {
     font-size: 26px; } }

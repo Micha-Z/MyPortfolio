@@ -34,7 +34,7 @@
 }
 
 a[class^="btn-"]:hover {
-  background-color: red;
+  background-color: $main-color;
 }
 
 // input[class^="btn-"]:hover {
