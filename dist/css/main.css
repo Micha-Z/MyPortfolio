@@ -160,7 +160,8 @@ img {
       padding-top: 25%; }
       #header-home .header-content h1 {
         font-size: 3.5rem;
-        line-height: 1.2; }
+        line-height: 1.2;
+        -webkit-font-smoothing: antialiased; }
       #header-home .header-content a {
         border-radius: 0.5rem; }
 
