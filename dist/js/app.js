@@ -42,38 +42,38 @@ let contact = document.getElementById("contact");
 let micha = document.getElementById("micha");
 let my_resume = document.getElementById("my_resume");
 let submit = document.getElementById("submit");
-console.log(my_resume);
+// console.log(my_resume);
 
-// window.addEventListener(
-//   "scroll",
-//   function (event) {
-//     if (isInViewport(about_btn)) {
-//       home.classList.add("current");
-//       resume.classList.remove("current");
-//       contact.classList.remove("current");
-//       about.classList.remove("current");
-//     }
-//     if (isInViewport(micha)) {
-//       home.classList.remove("current");
-//       resume.classList.remove("current");
-//       contact.classList.remove("current");
-//       about.classList.add("current");
-//     }
-//     if (isInViewport(my_resume)) {
-//       home.classList.remove("current");
-//       resume.classList.add("current");
-//       contact.classList.remove("current");
-//       about.classList.remove("current");
-//     }
-//     if (isInViewport(submit)) {
-//       home.classList.remove("current");
-//       resume.classList.remove("current");
-//       contact.classList.add("current");
-//       about.classList.remove("current");
-//     }
-//   },
-//   false
-// );
+window.addEventListener(
+  "scroll",
+  function (event) {
+    if (isInViewport(about_btn)) {
+      home.classList.add("current");
+      resume.classList.remove("current");
+      contact.classList.remove("current");
+      about.classList.remove("current");
+    }
+    if (isInViewport(micha)) {
+      home.classList.remove("current");
+      resume.classList.remove("current");
+      contact.classList.remove("current");
+      about.classList.add("current");
+    }
+    if (isInViewport(my_resume)) {
+      home.classList.remove("current");
+      resume.classList.add("current");
+      contact.classList.remove("current");
+      about.classList.remove("current");
+    }
+    if (isInViewport(submit)) {
+      home.classList.remove("current");
+      resume.classList.remove("current");
+      contact.classList.add("current");
+      about.classList.remove("current");
+    }
+  },
+  false
+);
 
 home.addEventListener("click", () => {
   home.classList.add("current");

@@ -95,9 +95,9 @@ img {
     padding-bottom: 0.5rem;
     transition: border-color 0.4s;
 
-    &:hover {
-      border-color: $medium-color;
-    }
+    // &:hover {
+    //   border-color: $medium-color;
+    // }
 
     &.current {
       border-color: $main-color;

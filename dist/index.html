@@ -3,14 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
     <link
       href="https://fonts.googleapis.com/css?family=Dosis"
       rel="stylesheet"
     />
-    <!-- <link
-      href="https://fonts.googleapis.com/css2?family=Lato&family=Open+Sans&family=Roboto&family=Roboto+Condensed&family=Roboto+Slab&display=swap"
-      rel="stylesheet"
-    /> -->
+
     <link rel="stylesheet" href="css/main.css" />
     <title>Michael Zadikowitsch | Web Developer UI/UX Desinger</title>
   </head>
@@ -180,11 +179,11 @@
     <!-- Resume -->
     <section id="resume">
       <div id="resume-h">
-        <h2 class="section-title" id="my_resume">My Resume</h2>
+        <h2 class="section-title">My Resume</h2>
         <div class="bottom-line"></div>
         <p class="lead">Check out my History</p>
         <div id="download">
-          <a href="" class="btn-light">Click Here To Download</a>
+          <a href="" id="my_resume" class="btn-light">Click Here To Download</a>
         </div>
         <div class="zoom" id="z3"></div>
       </div>
@@ -228,9 +227,9 @@
               placeholder="Enter Message"
               name="message"
             ></textarea>
-            <!-- <div class="my-2">
+            <div id="recapcha">
               <div data-netlify-recaptcha="true"></div>
-            </div> -->
+            </div>
           </div>
           <button type="submit" class="btn-dark" id="submit">Submit</button>
         </form>

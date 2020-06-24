@@ -5,10 +5,25 @@
 //     background-color: red;
 //   }
 // }
+@media (min-width: 801px) {
+  .main-nav {
+    a:hover {
+      border-color: $medium-color;
+    }
+  }
+}
 
 @media (max-width: 800px) {
   a[class^="btn-"]:hover {
     background-color: $light-color;
+  }
+
+  .main-nav {
+    a:hover {
+      // z-index: -1;
+      // border-color: transparent;
+      opacity: 1;
+    }
   }
 
   // a[class^="btn-"]:hover {
@@ -211,7 +226,7 @@
 
   #resume {
     #download {
-      padding: 4rem 2rem 6rem 2rem;
+      padding: 4rem 2rem 6.5rem 2rem;
     }
   }
 
@@ -224,10 +239,12 @@
         "phone"
         "subject"
         "message";
+
+      margin-bottom: 12px;
     }
 
     button#submit.btn-dark {
-      margin-top: 1rem;
+      margin-top: 0;
     }
   }
 
