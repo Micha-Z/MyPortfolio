@@ -389,7 +389,7 @@ img {
   #main-footer .footer-content {
     flex-direction: column; } }
 
-@media (max-width: 420px) {
+@media (max-width: 415px) {
   #header-home .header-content h1 {
-    font-size: 20px;
-    font-weight: normal; } }
+    font-size: 25px;
+    font-weight: 700; } }
