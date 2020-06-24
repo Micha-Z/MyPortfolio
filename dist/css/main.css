@@ -391,5 +391,5 @@ img {
 
 @media (max-width: 420px) {
   #header-home .header-content h1 {
-    font-size: 26px;
-    font-weight: 500; } }
+    font-size: 20px;
+    font-weight: normal; } }
