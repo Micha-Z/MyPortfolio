@@ -217,6 +217,7 @@ img {
       padding: 0 1rem; }
 
 #resume #resume-h {
+  padding: 3rem 0;
   background-color: #333;
   position: relative; }
 
@@ -258,6 +259,7 @@ img {
     padding: 0.5rem 1rem; }
 
 #contact-a button[type="submit"] {
+  margin-top: 0.5rem;
   width: 50%; }
 
 #contact-b .contact-info {
