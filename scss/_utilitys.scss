@@ -37,16 +37,6 @@ a[class^="btn-"]:hover {
   background-color: $main-color;
 }
 
-// input[class^="btn-"]:hover {
-//   background-color: $main-color;
-// }
-
-// button[class^="btn-"]:hover,
-// a[class^="btn-"]:hover,
-// input[class^="btn-"]:hover {
-//   background-color: $main-color;
-// }
-
 .lead {
   font-size: 1.3rem;
   margin-bottom: 2rem;
@@ -97,7 +87,6 @@ a[class^="btn-"]:hover {
 .section-title {
   font-size: 2rem;
   display: block;
-  // padding-bottom: 0.5rem;
   text-align: center;
   font-weight: 100;
   text-transform: uppercase;
@@ -112,5 +101,4 @@ a[class^="btn-"]:hover {
   height: 70px;
   width: 70px;
   bottom: 0px;
-  // background-color: red;
 }

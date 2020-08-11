@@ -11,9 +11,7 @@ $bg-image4: url("../img/japan_blur.jpg");
 $bg-image5: url("../img/japan_blur_cut.jpg");
 $bg-image6: url("../img/tokyo.jpg");
 
-// @import "config";
 @import "utilitys";
-// General Styles
 
 * {
   margin: 0;
@@ -95,10 +93,6 @@ img {
     padding-bottom: 0.5rem;
     transition: border-color 0.4s;
 
-    // &:hover {
-    //   border-color: $medium-color;
-    // }
-
     &.current {
       border-color: $main-color;
       transition: 1s;
@@ -107,8 +101,6 @@ img {
 }
 
 .main-nav.top {
-  // background-color: rgba($color: #000000, $alpha: 0.6);
-
   background: transparent;
   transition: background-color 1s;
 }
@@ -143,16 +135,10 @@ img {
   }
 }
 
-// Home Sections
+// Home
 #home {
   &-s {
     .me {
-      // background: $medium-color;
-
-      h2 {
-        // padding-bottom: 2rem;
-      }
-
       .about {
         // height: 60vh;
         padding-top: 10px;
@@ -264,7 +250,7 @@ img {
   }
 }
 
-// Contact Page
+// Contact
 #contact {
   &-a {
     .text-fields {
@@ -276,7 +262,6 @@ img {
       grid-gap: 1.2rem;
       margin-bottom: 1.2rem;
 
-      // Grid Areas
       .name-input {
         grid-area: name;
       }
