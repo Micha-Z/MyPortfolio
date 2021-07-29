@@ -1,18 +1,31 @@
-let home = document.getElementById("home");
-let about = document.getElementById("about");
-let about_btn = document.getElementById("about_btn");
-let resume = document.getElementById("resume");
-let contact = document.getElementById("contact");
-let micha = document.getElementById("micha");
-let my_resume = document.getElementById("my_resume");
-let submit = document.getElementById("submit");
+const homeBtn = document.getElementById("home");
+const aboutBtn = document.getElementById("about");
+const resumeBtn = document.getElementById("resume");
+const contactBtn = document.getElementById("contact");
 
-viewList = [home, resume, contact, about];
+const getToKnowMeBtn = document.getElementById("gtnm-btn");
+const profilePicture = document.getElementById("profile-picture");
+const myResumeSection = document.getElementById("my-resume");
+const submitBtn = document.getElementById("submit");
 
-addCurrentTag = (element) => {
+const viewList = [homeBtn, resumeBtn, contactBtn, aboutBtn];
+
+const isInViewport = (elem) => {
+  let distance = elem.getBoundingClientRect();
+  return (
+    distance.top >= 0 &&
+    distance.left >= 0 &&
+    distance.bottom <=
+      (window.innerHeight || document.documentElement.clientHeight) &&
+    distance.right <=
+      (window.innerWidth || document.documentElement.clientWidth)
+  );
+};
+
+const addCurrentTag = (element) => {
   element.classList.add("current");
   viewList
-    .filter((it) => element !== it)
+    .filter((viewListItem) => element !== viewListItem)
     .forEach((viewListItem) => {
       viewListItem.classList.remove("current");
     });
@@ -21,17 +34,17 @@ addCurrentTag = (element) => {
 window.addEventListener(
   "scroll",
   function () {
-    if (isInViewport(about_btn)) {
-      addCurrentTag(home);
+    if (isInViewport(getToKnowMeBtn)) {
+      addCurrentTag(homeBtn);
     }
-    if (isInViewport(micha)) {
-      addCurrentTag(about);
+    if (isInViewport(profilePicture)) {
+      addCurrentTag(aboutBtn);
     }
-    if (isInViewport(my_resume)) {
-      addCurrentTag(resume);
+    if (isInViewport(myResumeSection)) {
+      addCurrentTag(resumeBtn);
     }
-    if (isInViewport(submit)) {
-      addCurrentTag(contact);
+    if (isInViewport(submitBtn)) {
+      addCurrentTag(contactBtn);
     }
   },
   false
