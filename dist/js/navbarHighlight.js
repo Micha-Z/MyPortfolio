@@ -8,7 +8,7 @@ const profilePicture = document.getElementById("profile-picture");
 const myResumeSection = document.getElementById("my-resume");
 const submitBtn = document.getElementById("submit");
 
-const viewList = [homeBtn, resumeBtn, contactBtn, aboutBtn];
+const navButtons = [homeBtn, resumeBtn, contactBtn, aboutBtn];
 
 const isInViewport = (elem) => {
   let distance = elem.getBoundingClientRect();
@@ -22,12 +22,12 @@ const isInViewport = (elem) => {
   );
 };
 
-const addCurrentTag = (element) => {
-  element.classList.add("current");
-  viewList
-    .filter((viewListItem) => element !== viewListItem)
-    .forEach((viewListItem) => {
-      viewListItem.classList.remove("current");
+const addCurrentTag = (button) => {
+  button.classList.add("current");
+  navButtons
+    .filter((navButton) => button !== navButton)
+    .forEach((navButton) => {
+      navButton.classList.remove("current");
     });
 };
 
